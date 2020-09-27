@@ -23,24 +23,27 @@
     </div>
   </section>
   <section>
+    <!-- DEMOGRAPHICS-->
+
+
     <div class="container mt-5 center-block">
       <h1>הזנת פרטי בדיקה</h1>
-      <form id="allergyForm">
+      <form id="allergyForm" method="post" action="/send">
         <div class="form-group row mt-5">
           <label for="PatientID" class="col-sm-2 col-form-label">Patient ID</label>
           <div class="col-sm-6">
-            <input type="text" class="form-control" id="PatientID" placeholder="Patient ID">
+            <input type="text" class="form-control" id="PatientID" name="PatientID" placeholder="Patient ID">
           </div>
         </div>
 
         <div class="form-group row">
           <label for="Age" class="col-sm-1 col-form-label">Age</label>
           <div class="col-sm-3">
-            <input type="text" class="form-control" id="Age" placeholder="AGE">
+            <input type="text" name="age" class="form-control" id="Age" placeholder="AGE">
           </div>
           <label for="Gender" class="col-sm-1 col-form-label">Gender</label>
           <div class="col-sm-3">
-            <select class="form-control">
+            <select class="form-control" name="gender">
               <option>Male</option>
               <option>Female</option>
             </select>
@@ -50,7 +53,7 @@
         <div class="form-group row">
           <label for="inputPassword3" class="col-sm-2 col-form-label">Diagnosis</label>
           <div class="col-sm-6">
-            <select class="form-control">
+            <select class="form-control" name="diagnosis">
               <option>Atopic Dermatitis</option>
               <option>Psoriasis</option>
               <option>Chornic Dermatitis</option>
@@ -64,68 +67,22 @@
             <select class="form-control" id="testTypeSelect">
               <option selected>Choose Test Type</option>
               <option value="testA">Allergy Test A</option>
-              <option value="TestB">Allergy Test B</option>
+              <option value="testB">Allergy Test B</option>
             </select>
           </div>
         </div>
+        <!-- TEST TYPE-->
         
-        <div class="mt-5 center-block" id="addedQuestions" >
-          <h1> Allergy Test A</h1>
-          <div class="form-group row mt-5" >
-            <label for="Allergen 1" class="col-sm-2 col-form-label">Allergen 1</label>
-            <div class="col-sm-3">
-              <select class="form-control" id="testTypeSelect">
-                <option selected>Choose Allergen Type</option>
-                <option value="testA">Dust</option>
-                <option value="TestB">Peanuts</option>
-                <option value="TestB">Olive Trees</option>
-              </select>
-            </div>
-            <div class="col-sm-3">
-              <input type="text" class="form-control" id="PatientID" placeholder="Allergen Value">
-            </div>
-          </div>
 
-          <div class="form-group row">
-            <label for="Allergen 2" class="col-sm-2 col-form-label">Allergen 1</label>
-            <div class="col-sm-3">
-              <select class="form-control" id="testTypeSelect">
-                <option selected>Choose Allergen Type</option>
-                <option value="testA">Dust</option>
-                <option value="TestB">Peanuts</option>
-                <option value="TestB">Olive Trees</option>
-              </select>
-            </div>
-            <div class="col-sm-3">
-              <input type="text" class="form-control" id="PatientID" placeholder="Allergen Value">
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="Allergen 3" class="col-sm-2 col-form-label">Allergen 1</label>
-            <div class="col-sm-3">
-              <select class="form-control" id="testTypeSelect">
-                <option selected>Choose Allergen Type</option>
-                <option value="testA">Dust</option>
-                <option value="TestB">Peanuts</option>
-                <option value="TestB">Olive Trees</option>
-              </select>
-            </div>
-            <div class="col-sm-3">
-              <input type="text" class="form-control" id="PatientID" placeholder="Allergen Value">
-            </div>
+        <!-- SUBMIT BUTTON-->
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>
-
-
-    <div class="form-group row">
-      <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </div>
+      </form>
     </div>
-    </form>
     </div>
-  </div>
   </section>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
