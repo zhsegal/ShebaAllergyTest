@@ -7,17 +7,18 @@
   <title>Sheba Allergy Test</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='index.css' >
 </head>
 
 <body>
   <section>
-    <div class="container">
+    <div class="container p-3 my-3 bg-secondary text-white ">
       <img src='images/sheba.png' class='text-center'>
-      <div class="row">
+      <div class="row justify-content-center mt-5 ">
         <div class="col-l-12 center-block text-center">
-          <h1>מערכת הזנת תוצאות טסט אלרגיה</h1>
-          <h2> מחלקת עור, שיבא </h2>
+          <h1>Allergy Tests Results System</h1>
+          <h2> Department of Dermatology, Sheba Medical Center </h2>
         </div>
       </div>
     </div>
@@ -26,23 +27,23 @@
     <!-- DEMOGRAPHICS-->
 
 
-    <div class="container mt-5 center-block">
-      <h1>הזנת פרטי בדיקה</h1>
+    <div class="container mt-5 p-3 my-3 border  bg-light text-dark">
+      <h2>Patient Data</h2>
       <form id="allergyForm" method="post" action="/send">
-        <div class="form-group row mt-5">
+        <div class="form-group row mt-5 justify-content-center">
           <label for="PatientID" class="col-sm-2 col-form-label">Patient ID</label>
           <div class="col-sm-6">
             <input type="text" class="form-control" id="PatientID" name="PatientID" placeholder="Patient ID">
           </div>
         </div>
 
-        <div class="form-group row">
-          <label for="Age" class="col-sm-1 col-form-label">Age</label>
-          <div class="col-sm-3">
-            <input type="text" name="age" class="form-control" id="Age" placeholder="AGE">
+        <div class="form-group row justify-content-center">
+          <label for="Age" class="col-sm-2 col-form-label">Age</label>
+          <div class="col-sm-2">
+            <input type="text" name="age" class="form-control" id="Age" placeholder="Age">
           </div>
-          <label for="Gender" class="col-sm-1 col-form-label">Gender</label>
-          <div class="col-sm-3">
+          <label for="Gender" class="col-sm-2 col-form-label">Gender</label>
+          <div class="col-sm-2">
             <select class="form-control" name="gender">
               <option>Male</option>
               <option>Female</option>
@@ -50,7 +51,7 @@
           </div>
         </div>
 
-        <div class="form-group row">
+        <div class="form-group row justify-content-center">
           <label for="inputPassword3" class="col-sm-2 col-form-label">Diagnosis</label>
           <div class="col-sm-6">
             <select class="form-control" name="diagnosis">
@@ -61,7 +62,7 @@
           </div>
         </div>
 
-        <div class="form-group row" id='testselection'>
+        <div class="form-group row justify-content-center" id='testselection'>
           <label for="TestType" class="col-sm-2 col-form-label">Test Type</label>
           <div class="col-sm-6">
             <select class="form-control" id="testTypeSelect">
@@ -75,8 +76,8 @@
         
 
         <!-- SUBMIT BUTTON-->
-        <div class="form-group row">
-          <div class="col-sm-10">
+        <div class="form-group row justify-content-center mt-5">
+          <div class="col-sm-12 text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
         </div>

@@ -1,8 +1,8 @@
 const testA= `
 <div class="mt-5 center-block" id="addedQuestions">
-          <h1> Allergy Test A</h1>
+          <h2> Allergy Test A</h2>
 
-          <div class="form-group row mt-5">
+          <div class="form-group row mt-5 justify-content-center">
             <label for="Allergen 1" class="col-sm-2 col-form-label">Allergen 1</label>
             <div class="col-sm-3">
               <select class="form-control" id="testTypeSelect" name="allergen1">
@@ -18,7 +18,7 @@ const testA= `
             </div>
           </div>
 
-          <div class="form-group row mt-5">
+          <div class="form-group row mt-5 justify-content-center">
             <label for="Allergen 2" class="col-sm-2 col-form-label">Allergen 2</label>
             <div class="col-sm-3">
               <select class="form-control" id="testTypeSelect" name="allergen2">
@@ -34,7 +34,7 @@ const testA= `
             </div>
           </div>
 
-          <div class="form-group row mt-5">
+          <div class="form-group row mt-5 justify-content-center">
             <label for="Allergen 3" class="col-sm-2 col-form-label">Allergen 3</label>
             <div class="col-sm-3">
               <select class="form-control" id="testTypeSelect" name="allergen3">
@@ -54,9 +54,9 @@ const testA= `
 `
 const testB= `
 <div class="mt-5 center-block" id="addedQuestions">
-          <h1> Allergy Test B</h1>
+          <h2> Allergy Test B</h2>
 
-          <div class="form-group row mt-5">
+          <div class="form-group row mt-5 justify-content-center">
             <label for="Allergen 1" class="col-sm-2 col-form-label">Allergen 1</label>
             <div class="col-sm-3">
               <select class="form-control" id="testTypeSelect" name="allergen1">
@@ -72,7 +72,7 @@ const testB= `
             </div>
           </div>
 
-          <div class="form-group row mt-5">
+          <div class="form-group row mt-5 justify-content-center">
             <label for="Allergen 2" class="col-sm-2 col-form-label">Allergen 2</label>
             <div class="col-sm-3">
               <select class="form-control" id="testTypeSelect" name="allergen2">
@@ -87,8 +87,8 @@ const testB= `
                 name="allergen2_value">
             </div>
           </div>
-          
-        </div>
+
+         
 
 `
 
