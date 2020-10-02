@@ -15,15 +15,30 @@ const mongoURI = "mongodb+srv://admin-zvika:5293612aA!@cluster0.w9hbu.mongodb.ne
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
 const patientSchema = new mongoose.Schema({
     PatientID: String,
+    month: String,
+    year: String,
     age: String,
     gender: String,
-    diagnosis: String,
-    allergen1: String,
-    allergen1_value: String,
-    allergen2: String,
-    allergen2_value: String,
-    allergen3: String,
-    allergen3_value: String,
+    relevance: String,
+    duration: String,
+    family_history: String,
+    prothesis: String,
+    occupation: String,
+    hobbies: String,
+    body_parts: [{}],
+    standard: String,
+    perishable: String,
+    cosmetics: String,
+    lotions: String,
+    plants: String,
+    steroids: String,
+    textile: String,
+    baking: String,
+    perfumes: String,
+    shoes: String,
+    rubber: String,
+    acrylic: String,
+   
 })
 
 const Patient = mongoose.model("Patient", patientSchema)
@@ -39,18 +54,32 @@ app.get('/', (req, res) => {
 app.post('/send', (req, res) => {
     var patient=new Patient({
         PatientID:req.body.PatientID,
-        age:req.body.age,
-        gender:req.body.gender,
-        diagnosis:req.body.diagnosis,
-        allergen1:req.body.allergen1,
-        allergen1_value:req.body.allergen1_value,
-        allergen2:req.body.allergen2,
-        allergen2_value:req.body.allergen2_value,
-        allergen3:req.body.allergen3,
-        allergen3_value:req.body.allergen3_value,
+        month: req.body.month,
+        year: req.body.year,
+        age: req.body.age,
+        gender: req.body.gender,
+        relevance: req.body.relevance,
+        duration: req.body.duration,
+        family_history: req.body.family_history,
+        prothesis: req.body.prothesis,
+        occupation: req.body.occupation,
+        hobbies: req.body.hobbies,
+        body_parts: req.body.body_parts,
+        standard: req.body.standard,
+        perishable: req.body.perishable,
+        cosmetics: req.body.cosmetics,
+        lotions: req.body.lotions,
+        plants: req.body.plants,
+        steroids: req.body.steroids,
+        textile: req.body.textile,
+        baking: req.body.baking,
+        perfumes: req.body.perfumes,
+        shoes: req.body.shoes,
+        rubber: req.body.rubber,
+        acrylic: req.body.acrylic
     })
     patient.save()
-    console.log(req.body)
+    console.log(patient)
     res.redirect('/')
 });
 

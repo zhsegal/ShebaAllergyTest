@@ -7,8 +7,8 @@
   <title>Sheba Allergy Test</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href='index.css' >
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href='index.css'>
 </head>
 
 <body>
@@ -30,12 +30,26 @@
     <div class="container mt-5 p-3 my-3 border  bg-light text-dark">
       <h2>Patient Data</h2>
       <form id="allergyForm" method="post" action="/send">
+        
+        
         <div class="form-group row mt-5 justify-content-center">
           <label for="PatientID" class="col-sm-2 col-form-label">Patient ID</label>
-          <div class="col-sm-6">
-            <input type="text" class="form-control" id="PatientID" name="PatientID" placeholder="Patient ID">
+          <div class="col-sm-2">
+            <input type="text" class="form-control" id="PatientID" name="PatientID" placeholder="">
           </div>
+          <label for="month" class="col-sm-1 col-form-label">Month</label>
+          <div class="col-sm-1">
+            <input type="text" class="form-control" id="month" name="month" placeholder="">
+          </div>
+          <label for="year" class="col-sm-1 col-form-label">Year</label>
+          <div class="col-sm-1">
+            <input type="text" class="form-control" id="year" name="year" placeholder="">
+          </div>
+        
+        
         </div>
+
+
 
         <div class="form-group row justify-content-center">
           <label for="Age" class="col-sm-2 col-form-label">Age</label>
@@ -52,6 +66,56 @@
         </div>
 
         <div class="form-group row justify-content-center">
+          <label for="relevance" class="col-sm-2 col-form-label">Relevance Score</label>
+          <div class="col-sm-2">
+            <select class="form-control" name="relevance">
+              <option value="" selected></option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <label for="duration" class="col-sm-2 col-form-label">Duration</label>
+          <div class="col-sm-2">
+            <input type="text" name="duration" class="form-control" id="duration" placeholder="e.g. 7 years">
+          </div>
+        </div>
+        
+        
+        
+        <div class="form-group row justify-content-center">
+          <label for="family_history" class="col-sm-2 col-form-label">Family History</label>
+          <div class="col-sm-2">
+            <select class="form-control" name="family_history">
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </div>
+          <label for="prothesis" class="col-sm-2 col-form-label">Prothesis</label>
+          <div class="col-sm-2">
+            <select class="form-control" name="prothesis">
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group row justify-content-center">
+          <label for="Occupation" class="col-sm-2 col-form-label">Occupation</label>
+          <div class="col-sm-2">
+            <input type="text" name="occupation" class="form-control" id="occupation" placeholder="">
+          </div>
+          <label for="Hobbies" class="col-sm-2 col-form-label">Hobbies</label>
+          <div class="col-sm-2">
+            <input type="text" name="hobbies" class="form-control" id="hobbies" placeholder="">
+          </div>
+        </div>
+
+
+        
+        <!-- <div class="form-group row justify-content-center">
           <label for="inputPassword3" class="col-sm-2 col-form-label">Diagnosis</label>
           <div class="col-sm-6">
             <select class="form-control" name="diagnosis">
@@ -60,23 +124,134 @@
               <option>Chornic Dermatitis</option>
             </select>
           </div>
-        </div>
+        </div> -->
 
-        <div class="form-group row justify-content-center" id='testselection'>
-          <label for="TestType" class="col-sm-2 col-form-label">Test Type</label>
-          <div class="col-sm-6">
-            <select class="form-control" id="testTypeSelect">
-              <option selected>Choose Test Type</option>
-              <option value="testA">Allergy Test A</option>
-              <option value="testB">Allergy Test B</option>
+        <div class="form-group row justify-content-center mt-4" id='testselection'>
+          <label for="TestType" class="col-sm-2 col-form-label">Involved Body Parts</label>
+          <div class="form-group col-sm-6">
+            <label for="exampleFormControlSelect2">Choose relevant body part</label>
+            <select multiple class="form-control" id="exampleFormControlSelect2" name="body_parts">
+              <option value="face">face</option>
+              <option value="scalp">scalp</option>
+              <option value="neck">neck</option>
+              <option value="trunck">trunck</option>
+              <option value="back">back</option>
+              <option value="upper_limbs">upper limbs</option>
+              <option value="lower_limbs">lower limbs</option>
             </select>
           </div>
         </div>
+
+        <!-- TESTS CHECKBOX-->
+        <div class="form-group row justify-content-center mt-5" id='checkbox-list'>
+
+          <div class="col-sm-3 text-left">
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="1" id="standard" name="standard">
+              <label class="form-check-label" for="standard">
+                Standard
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="perishable" name="perishable">
+              <label class="form-check-label" for="perishable">
+                Perishable
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="cosmetics" name="cosmetics">
+              <label class="form-check-label" for="cosmetics">
+                Cosmetics
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="lotions" name="lotions">
+              <label class="form-check-label" for="lotions">
+                Lotions
+              </label>
+            </div>
+
+          </div>
+          
+          
+          <div class="col-sm-3 text-left">
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="1" id="plants" name="plants">
+              <label class="form-check-label" for="plants">
+                Plants
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="steroids" name="steroids">
+              <label class="form-check-label" for="steroids">
+                Steroids
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="textile" name="textile">
+              <label class="form-check-label" for="textile">
+                Textile
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="baking" name="baking">
+              <label class="form-check-label" for="baking">
+                Baking
+              </label>
+            </div>
+
+          </div>
+
+          <div class="col-sm-3 text-left">
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="1" id="perfumes" name="perfumes">
+              <label class="form-check-label" for="perfumes">
+                Perfumes
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="shoes" name="shoes">
+              <label class="form-check-label" for="shoes">
+                Shoes
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="rubber" name="rubber">
+              <label class="form-check-label" for="rubber">
+                Rubber
+              </label>
+            </div>
+
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" value="1" id="acrylic" name="acrylic">
+              <label class="form-check-label" for="acrylic">
+                Acrylic
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- TESTS INPITS-->
+       
+     
         <!-- TEST TYPE-->
-        
+
 
         <!-- SUBMIT BUTTON-->
-        <div class="form-group row justify-content-center mt-5">
+        <div class="form-group row justify-content-center mt-5" id="submit-button">
           <div class="col-sm-12 text-center">
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
