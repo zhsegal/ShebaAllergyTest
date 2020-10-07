@@ -628,6 +628,294 @@ const acrylic= `
 
 `
 
+const books= `
+<div class="mt-5 center-block" id="books-set">
+<h2> books Set</h2>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="books_0">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+-</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="books_1">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+1</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="books_2">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+2</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="books_3">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+3</h2>
+  </div>
+</div>
+
+</div>
+
+`
+
+const oils= `
+<div class="mt-5 center-block" id="oils-set">
+<h2> oils Set</h2>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="oils_0">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+-</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="oils_1">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+1</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="oils_2">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+2</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="oils_3">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+3</h2>
+  </div>
+</div>
+
+</div>
+
+`
+
+const dental= `
+<div class="mt-5 center-block" id="dental-set">
+<h2> dental Set</h2>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="dental_0">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+-</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="dental_1">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+1</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="dental_2">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+2</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="dental_3">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+3</h2>
+  </div>
+</div>
+
+</div>
+
+`
+
+const metals= `
+<div class="mt-5 center-block" id="metals-set">
+<h2> metals Set</h2>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="metals_0">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+-</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="metals_1">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+1</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="metals_2">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+2</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="metals_3">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+3</h2>
+  </div>
+</div>
+
+</div>
+
+`
+
+const makeup= `
+<div class="mt-5 center-block" id="makeup-set">
+<h2> makeup Set</h2>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="makeup_0">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+-</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="makeup_1">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+1</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="makeup_2">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+2</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="makeup_3">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+3</h2>
+  </div>
+</div>
+
+</div>
+
+`
+
+const plastic= `
+<div class="mt-5 center-block" id="plastic-set">
+<h2> plastic Set</h2>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="plastic_0">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+-</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="plastic_1">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+1</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="plastic_2">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+2</h2>
+  </div>
+</div>
+
+<div class="form-group row mt-5 justify-content-center">
+  <div class="col-sm-6">
+    <input type="text" class="form-control" id="PatientID" placeholder="Positive positions e.g. 1,5,6"
+      name="plastic_3">
+  </div>
+  <div class="col-sm-2 text-center">
+    <h2>+3</h2>
+  </div>
+</div>
+
+</div>
+
+`
+
 $('#standard').change(function() {
   if($(this).is(":checked")){
     $("#submit-button").before(standard)
@@ -748,11 +1036,65 @@ $('#acrylic').change(function() {
   
 });
 
+$('#books').change(function() {
+  if($(this).is(":checked")){
+    $("#submit-button").before(books)
+  }
+  else {
+    $("#books-set").remove()
+  }
+  
+});
 
+$('#oils').change(function() {
+  if($(this).is(":checked")){
+    $("#submit-button").before(oils)
+  }
+  else {
+    $("#oils-set").remove()
+  }
+  
+});
 
+$('#dental').change(function() {
+  if($(this).is(":checked")){
+    $("#submit-button").before(dental)
+  }
+  else {
+    $("#dental-set").remove()
+  }
+  
+});
 
+$('#metals').change(function() {
+  if($(this).is(":checked")){
+    $("#submit-button").before(metals)
+  }
+  else {
+    $("#metals-set").remove()
+  }
+  
+});
 
+$('#makeup').change(function() {
+  if($(this).is(":checked")){
+    $("#submit-button").before(makeup)
+  }
+  else {
+    $("#makeup-set").remove()
+  }
+  
+});
 
+$('#plastic').change(function() {
+  if($(this).is(":checked")){
+    $("#submit-button").before(plastic)
+  }
+  else {
+    $("#plastic-set").remove()
+  }
+  
+});
 
 
 
